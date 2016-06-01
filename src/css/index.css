@@ -133,14 +133,6 @@ span#cnzz_stat_icon_1259059869 {
     display: none;
 }
 
-
-/* .topbar span{
-    display:none;
-} */
-
-
-/*---滚动条默认显示样式--*/
-
 ::-webkit-scrollbar-thumb {
     background-color: #dddddd;
     height: 50px;
@@ -150,28 +142,18 @@ span#cnzz_stat_icon_1259059869 {
     border: 2px solid #fff;
 }
 
-
-/*---鼠标点击滚动条显示样式--*/
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #cccccc;
     height: 50px;
     -webkit-border-radius: 4px;
 }
 
-
-/*---滚动条大小--*/
-
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
-
-/*---滚动框背景样式--*/
-
 ::-webkit-scrollbar-track-piece {
-    /* background-color: #fff; */
     -webkit-border-radius: 0;
     cursor: pointer;
 }
@@ -244,10 +226,8 @@ body {
     color: #333333;
     background-color: white;
     height: 100%;
+    width:100%;
     font-family: 'Microsoft YaHei', 'hiragino sans gb', 'Arial', tahoma, stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
-    /* -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeSpeed;
-    overflow: scroll; */
 }
 
 .pagesection {
@@ -270,7 +250,6 @@ body {
     background-color: #eaeaea;
     height: 400px;
     position: relative;
-    /* top: 80px; */
 }
 
 .onewrapper,
@@ -409,6 +388,12 @@ body {
     right: 50px;
     top: 66px;
 }
+.aboutus_img{
+    position: absolute;
+    right: 50px;
+    top: 66px;
+}
+
 
 .founder_img {
     position: absolute;
@@ -418,19 +403,27 @@ body {
 
 .float_div {
     width: 398px;
-    /* border: 1px solid red; */
-    height: 700px;
     float: left;
     text-align: center;
 }
 
 .fourwrapper {
-    height: 854px;
+    height: 873px;
     background-color: #f5f5f5;
 }
 
 .sectionfour {
-    height: 854px;
+    height: 872px;
+}
+
+.a_three_content_job{
+        height: 606px;
+    background-color: #f5f5f5;
+}
+.a_three_content_jobcontent{
+    color: #9ccaca;
+    height: 30px;
+    text-align: center;
 }
 
 .sjtimg,
@@ -453,18 +446,23 @@ body {
 }
 
 .float_div p {
-    color: #acacac;
+        color: #acacac;
     padding-top: 28px;
     line-height: 1.5;
     font-size: 1.2rem;
-    width: 192px;
+    width: 256px;
     margin: 0 auto;
 }
 
-.aboutus_img {
-    position: absolute;
-    right: 10px;
-    top: 66px;
+
+.foo_center_i{
+        background: url('../image/jinggongbeian.png') no-repeat 0 0;
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    background-size: 100%;
+    position: relative;
+    top: 3px;
 }
 
 .a_one_left {
@@ -481,26 +479,24 @@ body {
 
 .a_three_header {
     height: 120px;
-    margin-bottom:45px;
+    margin-bottom: 45px;
 }
 
 .a_three_content {
-    height: 728px;
-    /* border: 1px solid green; */
+    height: 768px;
 }
 
 .a_two_content {
-    height: 580px;
+        height: 580px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .one_p1 {
     margin-top: 40px;
     line-height: 1.8;
     color: #737373;
-}
-
-.one_p2 {
-    /* margin-top: 200px; */
 }
 
 .one_p3 {
@@ -513,7 +509,7 @@ body {
 }
 
 .a_one_right {
-        float: right;
+    float: right;
     height: 470px;
     margin-top: 140px;
 }
@@ -596,17 +592,13 @@ body {
     cursor: pointer;
 }
 
-.div_left:hover {
-    /* background-color:red; */
-}
-
 .div_left img {
     margin-top: 18px;
 }
 
 .div_left p {
     margin-top: 22px;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
 .div_right {
@@ -692,35 +684,24 @@ body {
 .intro5_p {
     width: 100%;
     height: 66px;
-    /* background-color: black; */
     position: absolute;
     bottom: 0px;
-    /* opacity: 0.5; */
     text-align: center;
     vertical-align: middle;
     line-height: 66px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.intro2_p p {
+    color: white;
+}
 
-/* .intro2_p {
-    opacity: 0.6;
+.intro3_p p {
+    color: white;
 }
-.intro3_p {
-    opacity: 0.6;
-}
-.intro4_p {
-    opacity: 0.75;
-} */
 
-.intro2_p p{
-    color:white;
-}
-.intro3_p p{
-    color:white;
-}
-.intro3_p p{
-    color:white;
+.intro3_p p {
+    color: white;
 }
 
 .intro_n_wrapper {
@@ -735,20 +716,10 @@ body {
     -o-background-size: cover;
     color: #fff;
     z-index: 1;
-    width: 354px;
-    height: 266px;
+    width: 368px;
+    height: 297px;
     position: absolute;
     top: 33%;
-}
-
-@media screen and (min-width: 1367px) and (max-width: 2000px) {
-    /* .intro3_con{
-        position:absolute;
-        top:400px;
-    } */
-    .intro_n_wrapper {
-        padding-top: 6%;
-    }
 }
 
 .intro4_con {
@@ -770,8 +741,8 @@ body {
     color: #fff;
     z-index: 1;
     position: absolute;
-    width: 390px;
-    height: 272px;
+    width: 410px;
+    height: 299px;
     top: 33%;
 }
 
@@ -805,17 +776,6 @@ body {
     z-index: 1;
 }
 
-
-/* .intro6 {
-    background: url('../gw_sy_b6_bg.png') no-repeat center center #111;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #fff;
-    z-index: 1;
-} */
-
 .footerupper {
     position: absolute;
     left: 0;
@@ -844,11 +804,8 @@ body {
 }
 
 .intro1_con {
-    /* position: absolute;
-    left: 6%; */
     position: relative;
     height: 100%;
-    /* padding-top:5%; */
 }
 
 .intro1_right_img {
@@ -859,7 +816,23 @@ body {
     width: 100%;
     height: 100%;
     background-size: 36%;
-    /* background-size: 24%; */
+}
+
+span#cnzz_stat_icon_1259369596{
+    display:none;
+}
+
+@media screen and (min-width: 1367px) {
+    .intro_n_wrapper {
+        padding-top: 6%;
+    }
+    .intro1_right_img {
+        background-size: inherit;
+    }
+}
+
+.rightlink a:last-child{
+    cursor:text;
 }
 
 .intro1_con h2 {
@@ -885,8 +858,6 @@ body {
     line-height: 1.5;
     top: 250px;
 }
-
-.android_a {}
 
 .ios_a,
 .android_a {
@@ -961,6 +932,11 @@ body {
     font-size: 1.2rem;
 }
 
+.foo_center a{
+    text-decoration: none;
+    color: #777777;
+}
+
 .phone_i {
     background: url('../image/phone.png') no-repeat 0 0;
     display: block;
@@ -990,20 +966,18 @@ body {
     display: none;
     left: -42px;
     position: absolute;
-    /* transform: rotate(180deg); */
     top: 42px;
-    /* cursor:p; */
-    /* cursor:auto; */
     cursor: text;
 }
 
-.wx_officialAccounts {}
-.wx_officialAccounts:hover{
-    color:#446bc4;
+.wx_officialAccounts:hover {
+    color: #446bc4;
 }
-.weibo_a:hover{
-    color:#446bc4;
+
+.weibo_a:hover {
+    color: #446bc4;
 }
+
 .android_a_img {
     float: left;
     width: 220px;
@@ -1013,6 +987,7 @@ body {
 .androidimg {
     position: absolute;
     top: 52px;
+    left:0px;
     display: none;
 }
 
@@ -1033,7 +1008,7 @@ body {
 }
 
 .agreement-title {
-        text-align: center;
+    text-align: center;
     font-size: 20px;
     padding-top: 35px;
     margin-bottom: 35px;
