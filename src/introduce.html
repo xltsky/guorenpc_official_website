@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>果仁宝_关于我们</title>
-    <meta name="Keywords" content="果仁宝,果仁,消费,理财,支付,积分,新平台,goopal,年化收益率">
+    <title>果仁宝 关于我们</title>
+    <meta name="Keywords" content="果仁宝,果仁,消费,理财,话费,充话费,流量,充流量,支付,积分,新平台,goopal,年化收益率,花生,瓜子,杏仁,核桃,核桃仁,腰果,巴旦木,坚果,松子,碧根果">
     <meta name="description" content="“果仁宝”是由北京果仁宝科技有限公司打造的具有理财属性的一站式消费新平台。果仁宝系列产品具有丰富的消费场景，随买随花的灵活特色，同时具有安全，稳健的理财属性。未来，果仁宝还将开拓更多线上线下，海内海外的消费场景，为全球用户提供快捷、安全的消费和理财服务。">
     <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
 </head>
+
 <body>
     <div class="headerwrapper">
         <div class="header">
@@ -20,7 +22,7 @@
                         <img src="./image/gw_ewm_fwh.png" class="top_weixin_img">
                     </div>
                     <div class="weibo_tel">
-                        <a href="http://weibo.com/guorenbao" target="_blank">官方微博</a>
+                        <a href="http://weibo.com/guorenbao" target="_blank" id="gfwb">官方微博</a>
                         <a href="javascript:void(0);">客服电话：400-184-9696</a>
                     </div>
                 </div>
@@ -99,7 +101,7 @@
                         <div class="leftsidejob">
                             <div class="div_left div_hover onchoosed c1">
                                 <img src="./image/img1.png" alt="">
-                                <p>中高级Java研发工程师 （系统研发）</p>
+                                <p>中高级Java研发工程师</br> （系统研发）</p>
                             </div>
                             <div class="div_left div_hover c2">
                                 <img src="./image/img2.png" alt="">
@@ -302,7 +304,7 @@
         <div class="fivewrapper" style="background-color: #ffffff;">
             <div class="sectionfive" style="height: 600px;background-color: #ffffff;">
                 <a href="" name="events" id="events"></a>
-                 <div class="a_three_header">
+                <div class="a_three_header">
                     <h1 class="joinus_h1">果仁大事记</h1>
                     <img src="./image/events.png" class="joinus_img">
                 </div>
@@ -315,10 +317,14 @@
             <div class="footer">
                 <div class="foo_div">
                     <h2>果仁宝</h2>
-                    <div><a href="#aboutus">关于我们</a></div>
-                    <div><a href="#founder">创始人简介</a></div>
-                    <div><a href="#joinus">加入我们</a></div>
-                    <div><a href="#events">果仁大事记</a></div>
+                    <!-- <div><a href="#aboutus" class="aboutusbtn">关于我们</a></div>
+                    <div><a href="#founder" class="founderbtn">创始人简介</a></div>
+                    <div><a href="#joinus" class="joinusbtn">加入我们</a></div>
+                    <div><a href="#events" class="eventsbtn">果仁大事记</a></div> -->
+                    <div><a class="aboutusbtn">关于我们</a></div>
+                    <div><a class="founderbtn">创始人简介</a></div>
+                    <div><a class="joinusbtn">加入我们</a></div>
+                    <div><a class="eventsbtn">果仁大事记</a></div>
                 </div>
                 <div class="foo_div">
                     <h2>使用帮助</h2>
@@ -347,15 +353,79 @@
                 <p>©2015-2016 Copyright GOOPAL.COM.CN 果仁宝版权所有 ICP证：<a href="http://www.miibeian.gov.cn" target="_blank">京ICP备15059397号-1</a>
                     <i class="foo_center_i"></i>
                     <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020354" target="_blank">京公网安备 110108020203</a>
-                    </p>
+                </p>
             </div>
         </div>
     </div>
-    
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259369596'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1259369596' type='text/javascript'%3E%3C/script%3E"));</script>
-
     <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1259369596'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1259369596' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    function getScrollTop() {
+        var scrollPos;
+        if (window.pageYOffset) {
+            scrollPos = window.pageYOffset;
+        } else if (document.compatMode && document.compatMode != 'BackCompat') {
+            scrollPos = document.documentElement.scrollTop;
+        } else if (document.body) {
+            scrollPos = document.body.scrollTop;
+        }
+        return scrollPos;
+    }
+
+    
     $(function() {
+
+        var isIE = !!window.ActiveXObject;
+        var isIE6 = isIE && !window.XMLHttpRequest;
+        var isIE8 = isIE && !!document.documentMode;
+        var isIE7 = isIE && !isIE6 && !isIE8;
+        if (isIE) {
+            if (isIE6) {
+                $(".rightlink").css("top", "0px");
+                $(".wx_officialAccounts").css("margin-right", "80px");
+                $(".weibo_a").css("margin-right", "100px");
+                $(".intro1_con h3").css("font-size", "60px");
+                $(".intro1_con h2").css("font-size", "26px");
+                $(".android_a_img").css("margin-right", "100px");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color", "black");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity", "0.6");
+                $("#gfwb").css("margin-right", "100px");
+                $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size", "30px");
+            } else if (isIE8) {
+                // $(".rightlink").css("top", "0px");
+                $(".wx_officialAccounts").css("margin-right", "80px");
+                $(".weibo_a").css("margin-right", "100px");
+                $(".intro1_con h3").css("font-size", "60px");
+                $(".intro1_con h2").css("font-size", "26px");
+                $(".android_a_img").css("margin-right", "100px");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color", "black");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity", "0.6");
+                $("#gfwb").css("margin-right", "100px");
+                $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size", "30px");
+            } else if (isIE7) {
+                $(".rightlink").css("top", "0px");
+                $(".wx_officialAccounts").css("margin-right", "80px");
+                $(".weibo_a").css("margin-right", "100px");
+                $(".intro1_con h3").css("font-size", "60px");
+                $(".intro1_con h2").css("font-size", "26px");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color", "black");
+                $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity", "0.6");
+                $("#gfwb").css("margin-right", "100px");
+                $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size", "30px");
+                $(".rightsidejob").css("float", "");
+            }
+        }
+
+
         $(".div_hover").hover(function() {
             $(".a_three_content_job").find(".div_hover").removeClass("onchoosed");
             $(this).addClass("onchoosed");
@@ -376,15 +446,44 @@
                 $(".area7").show();
             }
         });
-
-        $(".wx_officialAccounts").hover(function(){
+        $(".wx_officialAccounts").hover(function() {
             $(".top_weixin_img").toggle();
         });
-
-        $(".headerimg").click(function(){
-            location.href="./index.html";
+        $(".headerimg").click(function() {
+            location.href = "./index.html";
         });
+        $(".aboutusbtn").on("click", function() {
+            window.scrollTo(0, 400);
+        });
+        $(".founderbtn").on("click", function() {
+            window.scrollTo(0, 873);
+        });
+        $(".joinusbtn").on("click", function() {
+            window.scrollTo(0, 1576);
+        });
+        $(".eventsbtn").on("click", function() {
+            window.scrollTo(0, 2450);
+        });
+        $(window).on("scroll", function() {
+            // console.log(getScrollTop());
+            // console.log(getQueryString("tab"));
+        });
+        $(window).on("load", function() {
+            // console.log(getQueryString("tab"));
+            var whichtab = getQueryString("tab");
+            if (whichtab == "aboutusbtn") {
+                window.scrollTo(0, 400);
+            } else if (whichtab == "founderbtn") {
+                window.scrollTo(0, 873);
+            } else if (whichtab == "joinusbtn") {
+                window.scrollTo(0, 1576);
+            } else if (whichtab == "eventsbtn") {
+                window.scrollTo(0, 2450);
+            }
+        })
     });
+
+    
     </script>
 </body>
 

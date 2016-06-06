@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>果仁宝_一站式消费新平台</title>
-    <meta name="Keywords" content="果仁宝,果仁,消费,理财,支付,积分,新平台,goopal,年化收益率">
+    <title>果仁宝 一站式消费新平台</title>
+    <meta name="Keywords" content="果仁宝,果仁,消费,理财,话费,充话费,流量,充流量,支付,积分,新平台,goopal,年化收益率,花生,瓜子,杏仁,核桃,核桃仁,腰果,巴旦木,坚果,松子,碧根果">
     <meta name="description" content="“果仁宝”是由北京果仁宝科技有限公司打造的具有理财属性的一站式消费新平台。果仁宝系列产品具有丰富的消费场景，随买随花的灵活特色，同时具有安全，稳健的理财属性。未来，果仁宝还将开拓更多线上线下，海内海外的消费场景，为全球用户提供快捷、安全的消费和理财服务。">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -35,7 +35,8 @@
                 <div class="intro1_con">
                     <h2>具有理财属性的</h2>
                     <h3>一站式消费新平台</h3>
-                    <p>果仁宝系列产品为您提供安全，稳健的理财新渠道，同时具有随买随花的灵活</br>属性和丰富的消费场景。</p>
+                    <p>果仁宝系列产品具有丰富的消费场景，随买随花的灵活特色，同时具有安全，稳健的理财属性。
+</p>
                     <div class="android_a_img">
                         <a href="javascript:void(0);" class="android_a">Android 1.2.0 立即下载</a>
                         <img src="./image/gw_ewm_android.png" class="androidimg">
@@ -101,10 +102,10 @@
                 <div class="footer">
                     <div class="foo_div">
                         <h2>果仁宝</h2>
-                        <div><a href="./introduce.html#aboutus" target="_blank">关于我们</a></div>
-                        <div><a href="./introduce.html#founder" target="_blank">创始人简介</a></div>
-                        <div><a href="./introduce.html#joinus" target="_blank">加入我们</a></div>
-                        <div><a href="./introduce.html#events" target="_blank">果仁大事记</a></div>
+                        <div><a href="./introduce.html?tab=aboutusbtn" target="_blank">关于我们</a></div>
+                        <div><a href="./introduce.html?tab=founderbtn" target="_blank">创始人简介</a></div>
+                        <div><a href="./introduce.html?tab=joinusbtn" target="_blank">加入我们</a></div>
+                        <div><a href="./introduce.html?tab=eventsbtn" target="_blank">果仁大事记</a></div>
                     </div>
                     <div class="foo_div">
                         <h2>使用帮助</h2>
@@ -160,11 +161,11 @@
             $(".top_weixin_img").toggle();
         });
 
-        $(".android_a_img").hover(function(){
+        $(".android_a").hover(function(){
             $(".androidimg").toggle();
         });
 
-        $(".ios_a_img").hover(function(){
+        $(".ios_a").hover(function(){
             $(".iosimg").toggle();
         });
 
@@ -176,6 +177,48 @@
             $("#dowebok").show();
         },10);
         
+
+        var isIE=!!window.ActiveXObject;
+        var isIE6=isIE&&!window.XMLHttpRequest;
+        var isIE8=isIE&&!!document.documentMode;
+        var isIE7=isIE&&!isIE6&&!isIE8;
+        if (isIE){
+          if (isIE6){
+            $(".rightlink").css("top","0px");
+            $(".wx_officialAccounts").css("margin-right","80px");
+            $(".weibo_a").css("margin-right","100px");
+            $(".intro1_con h3").css("font-size","60px");
+            $(".intro1_con h2").css("font-size","26px");
+            $(".android_a_img").css("margin-right","100px");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color","black");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity","0.6");
+            $("#gfwb").css("margin-right","100px");
+            $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size","30px");
+          }else if (isIE8){
+            // $(".rightlink").css("top","0px");
+            $(".wx_officialAccounts").css("margin-right","80px");
+            $(".weibo_a").css("margin-right","100px");
+            $(".intro1_con h3").css("font-size","60px");
+            $(".intro1_con h2").css("font-size","26px");
+            $(".android_a_img").css("margin-right","100px");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color","black");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity","0.6");
+            // $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("line-height","60px");
+            $("#gfwb").css("margin-right","100px");
+            $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size","30px");
+          }else if (isIE7){
+            $(".rightlink").css("top","0px");
+            $(".wx_officialAccounts").css("margin-right","80px");
+            $(".weibo_a").css("margin-right","100px");
+            $(".intro1_con h3").css("font-size","60px");
+            $(".intro1_con h2").css("font-size","26px");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("background-color","black");
+            $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("opacity","0.6");
+            // $(".intro2_p,.intro3_p,.intro4_p,.intro5_p").css("line-height","60px");
+            $("#gfwb").css("margin-right","100px");
+            $(".aboutus_h1,.founder_h1,.joinus_h1").css("font-size","30px");
+          }
+        }
     });
     </script>
 </body>

@@ -301,19 +301,7 @@ body {
     margin-top: 72px;
 }
 
-.foo_div a {
-    color: #ffffff;
-}
 
-.foo_div div {
-    margin-bottom: 24px;
-    font-size: 1.2rem;
-}
-
-.foo_div h2 {
-    font-size: 1.6rem;
-    margin-bottom: 40px;
-}
 
 .foo_center {
     height: 20px;
@@ -910,6 +898,7 @@ span#cnzz_stat_icon_1259369596{
 
 .foo_div a {
     color: #ffffff;
+    cursor:pointer;
 }
 
 .foo_div div {
@@ -973,6 +962,10 @@ span#cnzz_stat_icon_1259369596{
 .wx_officialAccounts:hover {
     color: #446bc4;
 }
+
+/* .wx_officialAccounts{
+    margin-right: 100px;
+} */
 
 .weibo_a:hover {
     color: #446bc4;
