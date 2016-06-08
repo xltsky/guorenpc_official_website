@@ -692,6 +692,10 @@ body {
     color: white;
 }
 
+.intro4_p {
+    opacity:0.7;
+}
+
 .intro_n_wrapper {
     max-width: 1200px;
     margin: 0 auto;
